@@ -1,0 +1,54 @@
+.adventage {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 160px 64px;
+    }
+}
+
+.adventage__content {
+    width: 529px;
+}
+
+.adventage__title {
+    @include text(72px, 79.2px, $primary-color);
+    margin-bottom: 32px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.adventage__text {
+    @include text($color: $card-backdrop);
+    margin-bottom: 48px;
+}
+
+.adventage__card-wrapper {
+    display: grid;
+    justify-items: center;
+}
+
+.adventage__card {
+    width: 640px;
+    height: 384px;
+    padding: 40px 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $card-backdrop;
+
+    img {
+        width: 64px;
+        height: 64px;
+    }
+
+    &.active {
+        background: $secondary-color;
+        border: none;
+    }
+}
+
+.adventage__card-description {
+    @include text($color: $dark-text);
+}

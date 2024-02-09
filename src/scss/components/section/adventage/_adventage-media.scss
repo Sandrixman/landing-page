@@ -1,0 +1,61 @@
+@media (width < 1440px) {
+    .adventage {
+        .container {
+            padding: 120px 48px;
+        }
+    }
+
+    .adventage__content {
+        width: 100%;
+        margin-right: 64px;
+    }
+
+    .adventage__title {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .adventage__card {
+        width: 100%;
+    }
+}
+
+@media (width < 920px) {
+    .adventage {
+        .container {
+            flex-direction: column;
+            padding: 80px 24px;
+        }
+    }
+    .adventage__content {
+        margin-bottom: 48px;
+    }
+
+    .adventage__title {
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .adventage__text {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 32px;
+    }
+
+    .adventage__card {
+        width: 100%;
+        height: 307px;
+        padding: 24px;
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .adventage__card-description {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

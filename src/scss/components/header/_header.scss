@@ -1,0 +1,91 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.header {
+    display: flex;
+    background: $primary-color;
+    color: $white;
+
+    a {
+        all: unset;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    padding: 24px 64px;
+    animation: slideDown 0.8s ease forwards;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 246px;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    position: relative;
+    height: 20px;
+    margin-right: 48px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16.8px;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $white;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.header__btn {
+    padding: 16px 32px;
+    border: 1px solid $white;
+    border-radius: 61px;
+    background: inherit;
+    color: inherit;
+    text-wrap: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        color: $primary-color;
+        background: $white;
+    }
+}
+
+.header__hamburger-menu {
+    display: none;
+}

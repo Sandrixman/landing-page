@@ -1,0 +1,16 @@
+@mixin text($size: 16px, $lh: 24px, $color: $white) {
+    font-size: $size;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin tag($color: $white, $bg: transparent) {
+    padding: 8px 16px;
+    color: $color;
+    border: 1px solid $color;
+    background: $bg;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}

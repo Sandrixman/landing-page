@@ -1,0 +1,38 @@
+@media (width < 1220px) {
+    .footer__title {
+        width: auto;
+    }
+
+    .footer__info-wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer__info {
+        gap: 8px 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__info-item {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media (width < 920px) {
+    .container {
+        padding: 80px 24px 24px;
+    }
+
+    .footer__title {
+        font-size: 40px;
+        line-height: 44px;
+        width: 100%;
+    }
+
+    .btn-wrapper {
+        margin-bottom: 64px;
+        flex-direction: column;
+    }
+}

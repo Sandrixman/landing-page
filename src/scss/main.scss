@@ -1,0 +1,124 @@
+@import "./base/normalize";
+@import "./base/reset";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./components/header/header";
+@import "./components/header/header-madia";
+@import "./components/footer/footer";
+@import "./components/footer/footer-media";
+@import "./components/section/mainSection/mainSection";
+@import "./components/section/mainSection/mainSection-media";
+@import "./components/section/statSection/statSection";
+@import "./components/section/statSection/statSection-media";
+@import "./components/section/banner/banner";
+@import "./components/section/banner/banner-media";
+@import "./components/section/adventage/adventage";
+@import "./components/section/adventage/adventage-media";
+@import "./components/section/review/review";
+@import "./components/section/review/review-media";
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: $primary-bg;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    align-self: start;
+    border-radius: 26px;
+    border: none;
+    padding: 16px 80px;
+    background: $secondary-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.secondary-btn {
+    padding: 16px 80px;
+    border: 1px solid $primary-color;
+    border-radius: 29px;
+    background: transparent;
+    color: $primary-color;
+    text-wrap: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.section-decor__item1 {
+    @extend %mainBg;
+    height: 57px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.section-decor__item2 {
+    @extend %mainBg;
+    height: 40px;
+    margin-top: 8px;
+}
+.section-decor__item3 {
+    @extend %mainBg;
+    height: 28px;
+    margin-top: 17px;
+}
+.section-decor__item4 {
+    @extend %mainBg;
+    height: 17px;
+    margin-top: 28px;
+}
+.section-decor__item5 {
+    @extend %mainBg;
+    height: 8px;
+    margin-top: 40px;
+}
+
+@media (width < 920px) {
+    .primary-btn {
+        width: 100%;
+    }
+
+    .secondary-btn {
+        width: 100%;
+        padding: 16px;
+    }
+}
+
+.word-block {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper {
+    height: 800px;
+    margin-top: -70px;
+    margin-right: 0;
+    padding: 0 32px;
+
+    .swiper-slide {
+        transition: 0.5s;
+
+        &.active {
+            scale: 1.1;
+        }
+    }
+}

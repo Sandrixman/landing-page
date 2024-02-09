@@ -1,0 +1,219 @@
+.animateElement {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animateElement.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-section {
+    @extend %mainBg;
+}
+
+.main__info {
+    margin-bottom: 138px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 41px 80px 87px;
+}
+
+.main__title {
+    @include text(96px, 96px);
+    width: 600px;
+    font-weight: 600;
+    span {
+        color: $secondary-color;
+    }
+}
+
+.main__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main__text {
+    @include text(16px, $color: $light-grey-text);
+    width: 304px;
+    margin-bottom: 32px;
+}
+
+.main__video {
+    position: relative;
+    padding: 0 32px;
+    height: 664px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .blur-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 9vw;
+        max-width: 130px;
+        height: 9vw;
+        max-height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $light-grey-color;
+        border-radius: 50%;
+        backdrop-filter: blur(5px);
+        transform: translate(-50%, -30%);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translate(-50%, -30%) scale(1.1);
+        }
+        img {
+            top: 50%;
+            left: 50%;
+            width: 24px;
+            height: 32px;
+        }
+    }
+}
+
+.main__workers-wrapper {
+    display: grid;
+    grid-template:
+        "title tag" auto
+        "text text" auto
+        / 1fr auto;
+    gap: 32px;
+    padding: 0 64px 0 87px;
+    margin-bottom: 104px;
+}
+
+.main__workers-title {
+    @include text(56px, 61.6px);
+    width: 976px;
+    grid-area: title;
+
+    span {
+        color: $secondary-color;
+    }
+}
+
+.main__workers-tag {
+    @include tag();
+    align-self: start;
+    grid-area: tag;
+}
+
+.main__workers-text {
+    @include text(20px, 28px, $light-grey-text);
+    width: 872px;
+    margin-left: auto;
+    grid-area: text;
+}
+
+.main__cards-workers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 0 64px 160px;
+}
+
+.main__card-item {
+    position: relative;
+    height: 384px;
+    padding: 32px;
+    background-image: url(../../../images/card-bg-920.webp);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main__card-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $card-backdrop;
+    opacity: 0.8;
+}
+
+.main__card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.main__card-title {
+    @include text(40px, 44px);
+    font-weight: 500;
+}
+
+.main__card-tag {
+    @include tag($dark-text, $white);
+}
+
+.main__card-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: $white;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 16.8px;
+    z-index: 1;
+    cursor: pointer;
+
+    div {
+        width: 20px;
+        height: 20px;
+        background: $secondary-color;
+        border-radius: 50%;
+
+        img {
+            width: 12px;
+            height: 20px;
+        }
+    }
+}
+
+.main__card-img {
+    position: absolute;
+    width: 60%;
+    top: 60px;
+    left: 180px;
+}
+
+.main__card-item_green {
+    background: $secondary-color;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__card-title_green {
+    @include text(32px, 35.2px, $primary-color);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.main__card-text_green {
+    @include text($color: $primary-color);
+    margin-bottom: 32px;
+}

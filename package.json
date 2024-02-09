@@ -1,0 +1,21 @@
+{
+    "name": "landing-page",
+    "version": "2.0.0",
+    "description": "",
+    "homepage": "https://Sandrixman.github.io/landing-page",
+    "scripts": {
+        "start": "parcel src/*.html",
+        "build": "parcel build src/*.html --public-url /landing-page/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sandrixman/landing-page.git"
+    },
+    "keywords": [],
+    "author": "Olexander",
+    "license": "ISC",
+    "devDependencies": {
+        "posthtml-include": "^1.7.4"
+    },
+    "browserslist": "> 0.5%, last 2 versions, not dead"
+}
