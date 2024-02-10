@@ -1,0 +1,2 @@
+const e=new Swiper(".swiper",{direction:"vertical",slidesPerView:2,spaceBetween:32,grabCursor:!0,slideActiveClass:"active",mousewheel:!0,slidesOffsetBefore:90,speed:1e3});e.on("reachBeginning",function(){window.scrollTo({top:window.scrollY-300,behavior:"smooth"})}),e.on("reachEnd",function(){document.getElementById("testimonial").scrollIntoView({behavior:"smooth",block:"start"})});
+//# sourceMappingURL=index.65b5035d.js.map
