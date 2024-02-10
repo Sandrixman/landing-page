@@ -1,0 +1,21 @@
+.error-page {
+    background: $primary-color;
+    height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        padding: 0 80px;
+        height: 100%;
+    }
+}
+
+@media (width < 860px) {
+    .error-page {
+        .container {
+            padding: 0 24px;
+        }
+    }
+}
