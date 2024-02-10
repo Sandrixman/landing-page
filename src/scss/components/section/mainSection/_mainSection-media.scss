@@ -41,6 +41,12 @@
 }
 
 @media (width < 920px) {
+    .main-section {
+        .container {
+            padding-top: 20px;
+        }
+    }
+
     .main__info {
         margin-bottom: 80px;
     }
@@ -117,8 +123,6 @@
     }
 
     .main__video {
-        height: 256px;
-
         .blur-container {
             width: 15vw;
             height: 15vw;
@@ -174,6 +178,9 @@
 }
 
 @media (width < 480px) {
+    .main__video {
+        height: 256px;
+    }
     .main__card-img {
         top: 100px;
         left: 30px;

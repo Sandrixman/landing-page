@@ -17,6 +17,7 @@
 @import "./components/section/adventage/adventage-media";
 @import "./components/section/review/review";
 @import "./components/section/review/review-media";
+@import "./components/section/mobileMenu/mobileMenu";
 
 body {
     font-family: "Poppins", sans-serif;
@@ -39,10 +40,12 @@ body {
     font-weight: 500;
     line-height: 22.4px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
         transform: scale(1.05);
+        background: $primery-button-hover;
+        color: $white;
     }
 }
 
@@ -120,5 +123,11 @@ body {
         &.active {
             scale: 1.1;
         }
+    }
+}
+
+@media (width < 920px) {
+    .swiper {
+        margin-top: 0;
     }
 }

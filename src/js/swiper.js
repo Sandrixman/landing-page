@@ -4,10 +4,6 @@ const swiper = new Swiper(".swiper", {
     spaceBetween: 32,
     grabCursor: true,
     slideActiveClass: "active",
-    autoplay: {
-        enabled: true,
-        delay: 5000
-    },
     mousewheel: true,
     slidesOffsetBefore: 90,
     speed: 1000

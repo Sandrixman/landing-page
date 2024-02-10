@@ -1,7 +1,13 @@
+.main-section {
+    .container {
+        padding-top: 0;
+    }
+}
+
 .animateElement {
     opacity: 0;
     transform: translateY(100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .animateElement.slide-up {
@@ -71,11 +77,12 @@
         border-radius: 50%;
         backdrop-filter: blur(5px);
         transform: translate(-50%, -30%);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
         cursor: pointer;
 
         &:hover {
             transform: translate(-50%, -30%) scale(1.1);
+            border-color: $white;
         }
         img {
             top: 50%;
@@ -131,7 +138,7 @@
     position: relative;
     height: 384px;
     padding: 32px;
-    background-image: url(../../../images/card-bg-920.webp);
+    background-image: url(../images/card-bg-920.webp);
     background-size: cover;
     overflow: hidden;
 }
@@ -170,13 +177,21 @@
     position: absolute;
     bottom: 32px;
     left: 32px;
+    padding: 4px 0 4px 8px;
     color: $white;
     background: transparent;
     border: none;
+    border-radius: 20px;
     font-size: 14px;
     line-height: 16.8px;
     z-index: 1;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: $secondary-color;
+        color: $primary-color;
+    }
 
     div {
         width: 20px;
