@@ -42,6 +42,10 @@
             align-items: end;
             padding: 80px 24px;
             background-size: cover;
+            background-image: image-set(
+                url("../images/review-banner-920.webp") 1x,
+                url("../images/review-banner-2048.webp") 2x
+            );
         }
 
         .review__banner-content {

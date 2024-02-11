@@ -115,6 +115,10 @@
         height: 576px;
         padding: 24px;
         margin: auto;
+        background-image: image-set(
+            url("../images/banner-bg-920.webp") 1x,
+            url("../images/banner-bg-2048.webp") 2x
+        );
         background-size: cover;
     }
 

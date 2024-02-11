@@ -1,5 +1,17 @@
 <section class="main-section">
     <div class="container">
+        <noscript>
+            <style>
+                .animateElement {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            </style>
+            <p class="noscript">
+                Ви вимкнули JavaScript у своєму браузері. Деякі функції цієї сторінки можуть бути
+                недоступні.
+            </p>
+        </noscript>
         <div class="main__info">
             <div class="main__content">
                 <h1 class="main__title animateElement">
@@ -14,7 +26,12 @@
                 </div>
             </div>
             <div class="main__video animateElement">
-                <img src="./images/banner-920.webp" alt="video" loading="lazy" />
+                <img
+                    srcset="./images/banner-920.webp 640w, ./images/banner-2048.webp 2x"
+                    src="./images/banner-920.webp"
+                    alt="video"
+                    loading="lazy"
+                />
                 <div class="blur-container">
                     <img src="./images/play.svg" alt="" />
                 </div>

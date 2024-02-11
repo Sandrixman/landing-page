@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btn.addEventListener('click', function () {
 
-        window.location.href = "/";
+        window.location.href = "/landing-page";
     });
 })
